@@ -660,8 +660,20 @@ declare namespace google {
             vAxes?: any;
             vAxis?: ChartAxis;
             width?: number;
+            intervals?: Intervals;
         }
 
+        type IntervalsStyleType = 'boxes' | 'line' | 'bars' | 'sticks' | 'points' | 'area';
+
+        export interface Intervals {
+            style?: IntervalsStyleType;
+            color?: string;
+            lineWidth?: number;
+            barWidth?: number;
+            boxWidth?: number;
+            pointSize?: number;
+        }
+        
         //#endregion
         //#region BarChart
 
